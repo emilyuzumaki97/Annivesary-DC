@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Anniversary ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<section id="page1" class="page active">
+
+<div class="glass">
+
+<h1>❤️ Our Story ❤️</h1>
+
+<p class="subtitle">
+A little surprise is waiting...
+</p>
+
+<p>
+Enter our Anniversary Date
+</p>
+
+<input
+type="password"
+maxlength="4"
+id="password"
+placeholder="••••">
+
+<button onclick="unlockStory()">
+Unlock Our Story ❤️
+</button>
+
+<p id="error"></p>
+
+</div>
+
+</section>
+
+<section id="page2" class="page">
+
+<div class="cake-container">
+
+<h1 class="cake-title">
+Happy Anniversary ❤️
+</h1>
+
+<p class="cake-text">
+Today is all about celebrating us.
+</p>
+
+<div class="cake-wrapper">
+
+<div class="flame flame1"></div>
+<div class="flame flame2"></div>
+<div class="flame flame3"></div>
+
+<img src="images\Cake.gif" class="cake">
+
+</div>
+
+<button onclick="goCakeCut()">
+Let's Cut The Cake 🎂
+</button>
+
+</div>
+
+</section>
+
+<section id="page3" class="page">
+
+<div class="celebration">
+
+<h1 class="celebrate-title">
+Let's Celebrate ❤️
+</h1>
+
+<div class="cake-cut-area">
+
+<video
+id="cakeVideo"
+class="cake"
+preload="auto"
+playsinline>
+
+<source src="images/CutCake.mp4" type="video/mp4">
+
+Your browser does not support video.
+
+</video>
+
+</div>
+
+<h2 id="celebrateMessage"></h2>
+
+<button
+id="cutCakeBtn"
+onclick="cutCake()">
+
+Cut The Cake 🍰
+
+</button>
+
+<button
+id="memoryBtn"
+onclick="goMemories()"
+>
+See Our Memories ❤️
+</button>
+</div>
+</section>
+
+
+<section id="page4" class="page">
+<div class="polaroid">
+
+<img id="memoryImage"
+src="photos/1.jpg">
+
+<div class="polaroid-text">
+
+<h2 id="memoryTitle"></h2>
+
+<p id="memoryCaption"></p>
+
+<p id="memoryDate"></p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<section id="page4" class="page">
+
+    <div class="memory-container">
+
+        <h1 class="memory-heading">
+            ❤️ Our Beautiful Memories ❤️
+        </h1>
+
+        <p class="memory-subtitle">
+            Every picture tells a little part of our story...
+        </p>
+
+        <div class="polaroid">
+
+            <img
+                id="memoryImage"
+                src="photos/1.jpg"
+                alt="Memory Photo">
+
+            <div class="polaroid-text">
+
+                <h2 id="memoryTitle">
+                    The Day We Met ❤️
+                </h2>
+
+                <p id="memoryCaption">
+                    This is where our beautiful journey began.
+                </p>
+
+                <span id="memoryDate">
+                    12 August 2024
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Appears after the last memory -->
+
+        <button
+            id="letterBtn"
+            class="letterBtn"
+            onclick="goLetter()">
+
+            💌 Letter For You
+
+        </button>
+
+    </div>
+
+</section>
+
+<section id="page5" class="page">
+
+    <div class="letter-container">
+
+        <h1>💌 Letter For You ❤️</h1>
+
+        <div id="envelope" class="envelope" onclick="openLetter()">
+
+            <div class="flap"></div>
+
+            <div class="body"></div>
+
+            <p class="tapText">Tap to Open ❤️</p>
+
+        </div>
+
+        <div id="letterPaper" class="letter-paper">
+
+            <h2>Happy Anniversary ❤️</h2>
+
+            <p id="typingText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+
+<br>
+
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
